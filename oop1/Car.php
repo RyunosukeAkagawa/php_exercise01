@@ -48,6 +48,4 @@ class Car
             "車体番号：{$this->getNumber()}" . PHP_EOL .
             "カラー：{$this->getColor()}" . PHP_EOL;
     }
-
-
 }
