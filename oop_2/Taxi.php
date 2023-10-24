@@ -6,13 +6,7 @@ class Taxi extends Car
 {
 
     private $passenger;
-    private $totalPassenger;
-
-    public function __construct($name, $number, $color)
-    {
-        parent::__construct($name, $number, $color);
-        $this->totalPassenger = 0;
-    }
+    private $totalPassenger = 0;
 
     public function getPassenger()
     {
@@ -54,11 +48,7 @@ class Taxi extends Car
     {
         return "車の車種：{$this->getName()}" . PHP_EOL .
             "車体番号：{$this->getNumber()}" . PHP_EOL .
-            "カラー：{$this->getColor()}" . PHP_EOL;
-    }
-
-    public function checkPassenger()
-    {
-        return "乗車人数:{$this->totalPassenger}人" . PHP_EOL;
+            "カラー：{$this->getColor()}" . PHP_EOL .
+            "乗車人数:{$this->totalPassenger}人" . PHP_EOL;
     }
 }
